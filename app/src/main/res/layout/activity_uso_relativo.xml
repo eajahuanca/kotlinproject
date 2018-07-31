@@ -140,15 +140,95 @@
         android:layout_toRightOf="@+id/siete"/>
 
     <TextView
-        android:id="@+id/dos"
+        android:id="@+id/nueve"
         android:layout_width="@dimen/ancho"
         android:layout_height="@dimen/alto"
-        android:text="2"
+        android:text="9"
         android:background="#48bfed"
         android:textColor="#ffffff"
         android:textSize="@dimen/texto"
         android:gravity="center"
         android:textStyle="bold"
-        android:layout_above="@id/cero"
-        android:layout_toRightOf="@+id/uno"/>
+        android:layout_above="@id/seis"
+        android:layout_toRightOf="@+id/ocho"/>
+
+    <LinearLayout
+        android:id="@+id/finall"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_toRightOf="@+id/nueve"
+        android:layout_below="@+id/resultado">
+        <TextView
+            android:layout_width="@dimen/ancho"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="DEL"
+            android:background="#b9b9b9"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="25dp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="@dimen/ancho"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="/"
+            android:background="#b9b9b9"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="@dimen/texto"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="@dimen/ancho"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="+"
+            android:background="#b9b9b9"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="@dimen/texto"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="@dimen/ancho"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="-"
+            android:background="#b9b9b9"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="@dimen/texto"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="@dimen/ancho"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="*"
+            android:background="#b9b9b9"
+            android:textColor="#FFF"
+            android:gravity="center"
+            android:textSize="@dimen/texto"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/resultado"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="0."
+        android:gravity="right|center_vertical"
+        android:textSize="50dp"
+        android:paddingRight="20dp"
+        android:textStyle="bold"
+        android:layout_above="@+id/nueve" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#51f187"
+        android:layout_toRightOf="@id/finall"
+        android:layout_below="@+id/resultado"/>
 </RelativeLayout>
