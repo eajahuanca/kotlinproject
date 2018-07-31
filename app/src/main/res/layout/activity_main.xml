@@ -7,57 +7,74 @@
         xmlns:android="http://schemas.android.com/apk/res/android"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:padding="15dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <ImageView
-                android:layout_width="110dp"
-                android:layout_height="110dp" />
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/pacman"/>
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="vertical">
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical">
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Nombre"/>
+                    android:hint="Nombre"
+                    android:inputType="textCapWords" />
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:hint="Apellido"/>
+                    android:hint="Apellido"
+                    android:inputType="textCapWords"/>
             </LinearLayout>
         </LinearLayout>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="Usuario"
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:inputType="textCapWords"
+                android:layout_marginRight="15dp"/>
             <EditText
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:hint="C.I."
-                android:layout_weight="1"/>
+                android:layout_weight="1"
+                android:inputType="number"
+                android:maxLength="8"/>
         </LinearLayout>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Correo electronico"/>
+            android:hint="Correo electronico"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"/>
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Contraseña"/>
+            android:hint="Contraseña"
+            android:inputType="textPassword"
+            android:layout_marginTop="15dp"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Genero"/>
+            android:text="Genero"
+            android:layout_marginTop="15dp"/>
         <RadioGroup
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp">
             <RadioButton
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -70,16 +87,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Intereses"/>
+            android:text="Intereses"
+            android:layout_marginTop="15dp"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp">
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:orientation="vertical"
-                android:layout_weight="1">
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp">
                 <CheckBox
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
@@ -107,11 +127,15 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Comentarios"/>
+            android:text="Comentarios"
+            android:layout_marginTop="15dp"/>
         <EditText
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:lines="3"/>
+            android:hint=""
+            android:lines="3"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"/>
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
